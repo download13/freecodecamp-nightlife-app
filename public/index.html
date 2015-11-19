@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>Nightlife</title>
+    <style>
+    html, body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    
+    body {
+        background-color: #A9B1A4;
+        background-image: url('/images/nightlife.jpg');
+        background-size: cover;
+    }
+    
+    .app-main {
+        background-color: #4B4F4E;
+        border-radius: 0 0 15px 15px;
+        max-width: 800px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    
+    .site-title {
+        font-family: Arial, sans-serif;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        margin: 0 0 40px 0;
+    }
+    
+    .search {
+        text-align: center;
+        display: flex;
+        margin-bottom: 40px;
+    }
+    
+    .geo-search-btn {
+        flex: 0 0 auto;
+        height: 50px;
+        border-radius: 5px 0 0 5px;
+        vertical-align: middle;
+        border: 0;
+        background-color: #ccc;
+        font-size: 28px;
+        padding: 9px;
+        cursor: pointer;
+    }
+    .geo-search-btn:hover {
+        background-color: #ddd;
+    }
+    
+    .search-in {
+        flex: 1 1 auto;
+        height: 50px;
+        font-size: 28px;
+        border-radius: 0 5px 5px 0;
+        vertical-align: middle;
+        border: 2px solid #ccc;
+        border-left: 0;
+        text-align: center;
+    }
+    
+    .login-bar {
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        text-align: right;
+        background-color: purple;
+        color: white;
+        padding: 8px;
+    }
+    .login-bar > a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .place {
+        overflow: auto;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-width: 0 0 2px 0;
+        border-style: solid;
+        border-color: black;
+    }
+    
+    .place__title {
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    .place__title > h2 {
+        margin: 0;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .place__image {
+        float: left;
+        border-radius: 5px;
+        margin-right: 15px;
+    }
+    
+    .place__snippet {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .rsvp-button {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 25px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        clear: both;
+        border: 0;
+        padding: 10px;
+    }
+    .rsvp-button.going {
+        background-color: black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div id="approot"></div>
+    <script src="/app.js"></script>
+</body>
